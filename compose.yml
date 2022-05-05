@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  
+  nfl_tac:
+    build: .
+    image: nfl_tac
+    container_name: nfl_tac
+    environment:
+      - PASSWORD=nfl
+      - ROOT=true
+      - USERID=${xUID}
+    ports:
+      - "8796:8787"
+    restart: always
+    volumes:
+      - .:/home/rstudio/project
