@@ -3,6 +3,8 @@ suppressPackageStartupMessages(library(tidyverse))
 
 library(rpart)
 
+library(rpart.plot)
+
 #Load the prepared data 
 train_fold = readRDS("~/project/2022/outputs/train_fold.rds")
 
@@ -13,6 +15,9 @@ rpart_model = rpart(formula = target ~ . - id,
                     data = train_fold,
                     method = "class",
                     cp = 0.001)
+
+#View decision tree
+# rpart.plot(x = rpart_model)
 
 saveRDS(rpart_model,file = "~/project/2022/outputs/model.rds")
 

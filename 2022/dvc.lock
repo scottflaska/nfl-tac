@@ -26,12 +26,12 @@ stages:
       md5: 2fb37b39b818cd942b09443ce20ab558
       size: 46082369
     - path: train_model.R
-      md5: 0a66b78ad760e123443b0e7039ba9a77
-      size: 1204
+      md5: fd419990831aa26c4767b0fa50dea070
+      size: 1276
     outs:
     - path: accuracy.txt
       md5: 2cad58473b138734c47844522d5ae335
       size: 5
     - path: outputs/model.rds
-      md5: 1c5e62a6bf687e61fc0580b95fca424f
-      size: 101738
+      md5: 40584a9234bb72d8f07b30c8f55fd783
+      size: 101739
