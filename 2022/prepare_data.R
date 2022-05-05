@@ -11,7 +11,7 @@ train = read_csv("~/project/2022/data/train.csv",show_col_types = F)
 #View the structure of the training data
 # train %>% str(give.attr = F)
 
-#Select subset of features (columns) from the dataset
+#Select subset of features (columns) from the table
 train_feature_subset = train %>% 
   select(id, 
          f_00,
