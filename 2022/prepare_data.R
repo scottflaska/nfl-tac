@@ -22,6 +22,7 @@ train_feature_subset = train %>%
          f_05,
          f_06,
          f_07,
+         f_08,
          target) 
 
 #Split data into a training fold and a validation fold

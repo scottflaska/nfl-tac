@@ -7,31 +7,31 @@ stages:
       md5: 38d8ca74676e1be914a84d2ae3696318
       size: 318733334
     - path: prepare_data.R
-      md5: 9ce41c7439fc189fa463dbb0004d7c10
-      size: 1120
+      md5: 2f9354651c2507e196e9e384925cd54b
+      size: 1135
     outs:
     - path: outputs/train_fold.rds
-      md5: 3bcc950862204d1ed9155530c6f0ce3b
-      size: 5705589
+      md5: 254bbf8627c681c5ff7beb52c75ad84a
+      size: 5775416
     - path: outputs/validation_fold.rds
-      md5: 01c983fc70777343f145143f0bbe8560
-      size: 45517455
+      md5: 2fb37b39b818cd942b09443ce20ab558
+      size: 46082369
   train_model:
     cmd: Rscript train_model.R
     deps:
     - path: outputs/train_fold.rds
-      md5: 3bcc950862204d1ed9155530c6f0ce3b
-      size: 5705589
+      md5: 254bbf8627c681c5ff7beb52c75ad84a
+      size: 5775416
     - path: outputs/validation_fold.rds
-      md5: 01c983fc70777343f145143f0bbe8560
-      size: 45517455
+      md5: 2fb37b39b818cd942b09443ce20ab558
+      size: 46082369
     - path: train_model.R
       md5: 0a66b78ad760e123443b0e7039ba9a77
       size: 1204
     outs:
     - path: accuracy.txt
-      md5: ac10b13659b44ba85ae43a5c97650795
-      size: 6
+      md5: 2cad58473b138734c47844522d5ae335
+      size: 5
     - path: outputs/model.rds
-      md5: 90235a7eaa955b2f907de10a7105453d
-      size: 96164
+      md5: 1c5e62a6bf687e61fc0580b95fca424f
+      size: 101738
