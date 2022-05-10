@@ -17,4 +17,4 @@ This repo provides an example for how you can use DVC to manage machine learning
    - Switch back to the `main` branch
    - Run [`dvc pull`](https://dvc.org/doc/command-reference/pull) to download the tracked data/model files for the `main` branch
 
-Data: [Kaggle Tabular Playground Series - May 2022](https://www.kaggle.com/competitions/tabular-playground-series-may-2022/overview)
+Data: [Kaggle Tabular Playground Series - May 2022](https://www.kaggle.com/competitions/tabular-playground-series-may-2022/data)
