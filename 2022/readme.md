@@ -1,5 +1,5 @@
 # NFL TAC Demo | 2022
-## Introduction to Data Version Control (DVC)
+## Introduction to [Data Version Control (DVC)](https://dvc.org/)
 
 This repo provides an example for how you can use DVC to manage machine learning projects.
 
