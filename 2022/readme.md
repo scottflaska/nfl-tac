@@ -6,6 +6,7 @@ This repo provides an example for how you can use DVC to manage machine learning
 ### Demo
 1. Review R scripts for each stage of the pipeline: `prepare_data.R` and `train_model.R`
 1. Review the pipeline file ([`dvc.yaml`](https://dvc.org/doc/user-guide/project-structure/pipelines-files)) which defines the stages in the pipeline
+1. Visualize the pipeline with [`dvc dag`](https://dvc.org/doc/command-reference/dag)
 1. Use [`dvc repro`](https://dvc.org/doc/command-reference/repro) to reproduce the pipeline and update the data/model outputs from each stage
 1. Use [`dvc push`](https://dvc.org/doc/command-reference/push) to push the data to remote storage (must be setup with [`dvc remote add`](https://dvc.org/doc/command-reference/remote/add))
 1. Add Feature 9 to the model
