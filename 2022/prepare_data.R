@@ -23,6 +23,8 @@ train_feature_subset = train %>%
          f_06,
          f_07,
          f_08,
+         f_09,
+         f_10,
          target) 
 
 #Split data into a training fold and a validation fold
@@ -36,3 +38,4 @@ validation_fold = train_feature_subset %>%
 saveRDS(object = train_fold, file = "~/project/2022/outputs/train_fold.rds")
 
 saveRDS(object = validation_fold, file = "~/project/2022/outputs/validation_fold.rds")
+
